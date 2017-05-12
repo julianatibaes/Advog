@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estado_civil">
+        <item>solteira (o)</item>
+        <item>casada (o)</item>
+        <item>divorciada (o)</item>
+        <item>separada (o)</item>
+        <item>viúva (o)</item>
+    </string-array>
+</resources>

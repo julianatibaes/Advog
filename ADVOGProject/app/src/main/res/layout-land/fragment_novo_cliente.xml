@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tibaes.advogproject.NovoClienteFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/colorLighyGrey"
+        android:layout_margin="6dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_new_photo_contact"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="24dp"
+                android:background="@color/colorWhite"
+                android:src="@drawable/people_edited" />
+
+            <Button
+                android:id="@+id/btn_get_image_contact"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="94dp"
+                android:layout_alignBottom="@id/img_new_photo_contact"
+                android:layout_marginTop="96dp"
+                android:background="@drawable/btn_camera" />
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="6dp"
+                android:background="@color/colorLighyGrey">
+
+                <EditText
+                    android:id="@+id/et_client_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="nome completo"
+                    android:inputType="textPersonName"
+                    android:maxLines="1" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="nome social"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/et_client_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@android:drawable/sym_action_email"
+                    android:ems="10"
+                    android:hint="e-mail"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/et_client_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="(   ) _____ - _____"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/et_client_cpf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="CPF" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="RG" />
+
+                <Spinner
+                    android:id="@+id/spinner_estado_civil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="estado civil"
+                    android:textColor="#BDBDBD"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
